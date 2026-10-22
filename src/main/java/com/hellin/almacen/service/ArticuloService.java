@@ -1,5 +1,4 @@
-package com.hellin.almacen.service;
-
+package com.hellin.almacen.serv
 import com.hellin.almacen.model.Articulo;
 import com.hellin.almacen.repository.ArticuloRepository;
 import org.springframework.stereotype.Service;
@@ -51,4 +50,4 @@ public Optional<Map<String, Object>> buscarBasico(Integer id) {
 
     return Optional.of(datos);
 }
-}
+
