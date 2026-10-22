@@ -50,4 +50,4 @@ public Optional<Map<String, Object>> buscarBasico(Integer id) {
 
     return Optional.of(datos);
 }
-
+}
