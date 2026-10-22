@@ -19,9 +19,13 @@ public class ArticuloService {
         this.repositorio = repositorio;
     }
 
+        /**
+     * Obtiene el catálogo completo de artículos del almacén.
+     *
+     * @return lista con todos los artículos registrados; vacía si no hay ninguno
+     */
     public List<Articulo> listarTodos() {
-        // TODO (#n de la incidencia): devolver todos los artículos. Pista: repositorio.findAll()
-        throw new UnsupportedOperationException("Pendiente de implementar");
+        return repositorio.findAll();
     }
 
  /**
