@@ -144,8 +144,8 @@ src/main/resources/  application*.properties, schema.sql, data.sql
 | Integrante | Herramienta | Para qué |
 |------------|-------------|----------|
 | Joaq | Claude (Anthropic) | Interpretar el enunciado, resolver errores de Git (push rechazado, merges), configurar `JAVA_HOME`, redactar el workflow de CI y revisar el estado del repositorio. |
-| Rafa | *(rellenar)* | *(rellenar)* |
-| Elliot | *(rellenar)* | *(rellenar)* |
+| Rafa | ChatGPT |  |
+| Elliot | *(rellenar)* | Consultar comandos de Git y GitHub, resolver dudas sobre ramas, commits y Pull Requests, recibir apoyo en la implementación del controlador de artículos, interpretar errores de ejecución. |
 | Juanma | *(rellenar)* | *(rellenar)* |
 
 No se han introducido contraseñas ni claves en ninguna herramienta de IA.
