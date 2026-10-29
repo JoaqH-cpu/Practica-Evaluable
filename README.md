@@ -145,7 +145,7 @@ src/main/resources/  application*.properties, schema.sql, data.sql
 |------------|-------------|----------|
 | Joaq | Claude (Anthropic) | Interpretar el enunciado, resolver errores de Git (push rechazado, merges), configurar `JAVA_HOME`, redactar el workflow de CI y revisar el estado del repositorio. |
 | Rafa | *(rellenar)* | *(rellenar)* |
-| Elliot | *(rellenar)* | *(rellenar)* |
+| Elliot | *Codex (Open IA)* | He implementado el método buscarBasico() de ArticuloService y he utilizado la IA, resolver errores y comprobar la compilación del proyecto.|
 | Juanma | *(rellenar)* | *(rellenar)* |
 
 No se han introducido contraseñas ni claves en ninguna herramienta de IA.
