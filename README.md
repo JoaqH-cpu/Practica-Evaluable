@@ -119,17 +119,33 @@ src/main/resources/  application*.properties, schema.sql, data.sql
 
 ## Equipo y flujo de trabajo
 
-| Integrante | Rol |
-|------------|-----|
-| _Nombre 1_ | _Planificación_ |
-| _Nombre 2_ | _Documentación_ |
-| _Nombre 3_ | _Integración del código_ |
+| Integrante | Código | Documentación |
+|------------|--------|---------------|
+| Joaq | `listarTodos()` en el servicio + integración continua | Wiki: Home |
+| Rafa | `GET /api/articulos` en el controlador | Wiki: Endpoints |
+| Elliot | `buscarBasico()` en el servicio (404 y "Agotado") | Wiki: Modelo de datos |
+| Juanma | `GET /api/articulos/{id}/basico` en el controlador | Wiki: Guía de uso + README |
 
-- Cada tarea es una **Issue** y se planifica en **Projects**; la documentación funcional está en la **wiki**.
-- Una rama por tarea (`feat/...`, `docs/...`) y *Pull Request* revisado por otra persona antes de fusionar a `main`.
-- Commits en formato convencional referenciando la issue, p. ej. `feat: añade endpoint de datos básicos (#4)`.
-- Los roles rotan entre prácticas.
+### Flujo de trabajo
+
+- Cada tarea es una **issue** con etiqueta (`historia`, `tarea`, `docs`, `bug`), estimación en horas y asignada al **Sprint 1** en el [tablero del proyecto](https://github.com/users/JoaqH-cpu/projects/1).
+- Ramas:
+  - `main`: versiones publicadas (v1.0.0).
+  - `develop`: rama de integración y rama por defecto.
+  - `feature/N-descripcion`: una rama por tarea, creada desde `develop`, donde `N` es el número de la issue.
+- Commits en formato convencional citando la issue: `feat: implementa listarTodos (#13)`.
+- Cada rama se integra mediante **pull request hacia `develop`** con `Closes #N` en la descripción.
+- Cada PR la revisa otro compañero (comentario y aprobación) antes de fusionarla.
+- `develop` y `main` están protegidas: no se puede fusionar si el check **CI - Compilar** falla.
+- Al terminar el sprint se fusiona `develop` en `main` y se etiqueta la versión (`v1.0.0`).
 
 ## Uso de IA
 
-_Declarar aquí qué se ha consultado a una IA (comandos, errores…). Nunca se introducen contraseñas ni claves._
+| Integrante | Herramienta | Para qué |
+|------------|-------------|----------|
+| Joaq | Claude (Anthropic) | Interpretar el enunciado, resolver errores de Git (push rechazado, merges), configurar `JAVA_HOME`, redactar el workflow de CI y revisar el estado del repositorio. |
+| Rafa | *(rellenar)* | *(rellenar)* |
+| Elliot | *(rellenar)* | *(rellenar)* |
+| Juanma | *(rellenar)* | *(rellenar)* |
+
+No se han introducido contraseñas ni claves en ninguna herramienta de IA.
